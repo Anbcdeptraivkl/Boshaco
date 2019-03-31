@@ -4,16 +4,17 @@
     <title>BOSHACO</title>
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    
 </head>
 <body>
     <header>
         <h1>BOSHACO</h1>
         <h2>Book Sharing Community</h2>
         <ul class="toolbar">
-            <li class="card">HOME</li>
-            <li class="card">ABOUT</li>
+            <li class="card"><a href="none">HOME</a></li>
+            <li class="card"><a href="none">ABOUT</a></li>
             <li class="button-card"><button id="order">Order</button></li>
             <li class="button-card"><button id="login">Login</button></li>
         </ul>
@@ -57,6 +58,20 @@
             </ul>
         </section>
         <section class="main-bar">
+            <div class="slideshow-container">
+                <div class="slide fader">
+                    <img src="../img/bb.jpg" alt="Best-seller">
+                </div>
+                <div class="slide fader">
+                    <img src="../img/nb.jpg" alt="New Books">
+                </div>
+                <div class="slide fader">
+                    <img src="../img/sach-hay.jpg" alt="Recomendations">
+                </div>
+
+                <a class="prev-arrow" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next-arrow" onclick="changeSlide(1)">&#10095;</a>
+            </div>
             
         </section>
     </div>
@@ -67,5 +82,7 @@
             Address: EFG</p>
         </address>
     </footer>
+
+    <script type="text/javascript" src="../src/slideShow.js"></script>
 </body>
 </html>
