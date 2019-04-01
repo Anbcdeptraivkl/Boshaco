@@ -3,6 +3,8 @@
 <head>
     <title>BOSHACO</title>
 
+    <meta charset="utf-8">
+
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
@@ -10,13 +12,16 @@
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo">
+        </div>
         <h1>BOSHACO</h1>
         <h2>Book Sharing Community</h2>
         <ul class="toolbar">
             <li class="card"><a href="none">HOME</a></li>
             <li class="card"><a href="none">ABOUT</a></li>
-            <li class="button-card"><button id="order">Order</button></li>
-            <li class="button-card"><button id="login">Login</button></li>
+            <li class="button-card"><button id="orderButton">Order</button></li>
+            <li class="button-card"><button id="loginButton">Login</button></li>
         </ul>
     </header>
     <div class="main-body">
@@ -77,12 +82,23 @@
     </div>
     <footer>
         <address>
-            <p>Nhom ABC<br>
-            Hotline: 0123456<br>
-            Address: EFG</p>
+            <p>Group 15<br>
+            Lines: 0939301623<br>
+            Contact: Ngọc</p>
         </address>
     </footer>
 
+    <!--Ordering Modal-->
+    <div id="orderModal" class="modal">
+        <div class="modalContent">
+            <span class="close">&times;</span>
+            <p>Placeholder Text</p>
+        </div>
+    </div>
+
+    <!--Login Modal-->
+
     <script type="text/javascript" src="../src/slideShow.js"></script>
+    <script type="text/javascript" src="../src/orderModal.js"></script>
 </body>
 </html>

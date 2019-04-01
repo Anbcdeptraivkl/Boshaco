@@ -34,6 +34,17 @@ header {
 
     background-color: rgb(165, 175, 250);
 }
+header .logo {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+
+    background-color: white;
+}
 header > h1 {
     position: relative;
 
@@ -288,7 +299,51 @@ footer > address {
 
     padding: 20px;
 
-    text-align: center;
+    text-align: right;
+}
+
+
+.modal {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modalContent {
+    position: relative;
+    top: 40%;
+
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    width: 50%;
+    height: auto;
+    min-height: 50px;
+
+    background-color: whitesmoke;
+}
+.close {
+    float: right;
+    top: 0;
+
+    margin-top: -20px;
+    padding: 10px;
+
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.close:hover, .close:focus, .close:active {
+    color: red;
+    cursor: pointer;
 }
 
 
