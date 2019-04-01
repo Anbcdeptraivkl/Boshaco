@@ -318,7 +318,7 @@ footer > address {
 }
 .modalContent {
     position: relative;
-    top: 40%;
+    top: 20%;
 
     display: block;
     margin: auto;
@@ -329,6 +329,51 @@ footer > address {
     min-height: 50px;
 
     background-color: whitesmoke;
+}
+#loginModal > .modalContent {
+    width: 30%;
+}
+.formContainer {
+
+    display: block;
+    max-width: 100%;
+    margin-right: 20px;
+    padding: 10px;
+}
+.formContainer input[type=text], input[type=email] {
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    background-color: #f1f1f1;
+}
+.formContainer input[type=text]:focus, input[type=email]:focus {
+    background-color: #ddd;
+}
+.formContainer .submitBtn {
+    position: relative;
+    
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+    background-color: green;
+    cursor: pointer;
+
+    opacity: 0.7;
+}
+.formContainer .submitBtn:hover {
+    opacity: 1;
+}
+.formContainer .submitBtn:active {
+    background-color: yellowgreen;
 }
 .close {
     float: right;

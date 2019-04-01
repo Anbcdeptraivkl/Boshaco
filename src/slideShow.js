@@ -19,7 +19,7 @@ function showSlide(index)
     //Hide all first:
 
     for (var i = 0; i < slideGroup.length; i++) {
-        slideGroup[i].style.display = "none"
+        slideGroup[i].style.display = "none";
     }
     //Show the correct slide:
     slideGroup[slideIndex - 1].style.display = "block";
