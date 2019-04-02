@@ -32,7 +32,7 @@ header {
 
     text-align: center;
 
-    background-color: rgb(165, 175, 250);
+    background-color: rgb(15, 150, 185);
 }
 header .logo {
     position: absolute;
@@ -48,7 +48,7 @@ header .logo {
 header > h1 {
     position: relative;
 
-    margin-left: 100px;
+    margin-left: 35px;
     padding-top: 20px;
 
     font-weight: bolder;
@@ -59,7 +59,7 @@ header > h1 {
 header > h2 {
     position: relative;
 
-    margin-left: 100px;
+    margin-left: 35px;
     padding-bottom: 20px;
 
     font-style: italic;
@@ -82,12 +82,12 @@ header .toolbar .card{
     padding-right: 20px;
     padding-bottom: 5px;
     padding-left: 15px;
-    width: 50px;
+    width: 95px;
     height: 30px;
 
     font-weight: bolder;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
 }
 header .toolbar .card:nth-of-type(1) {
@@ -159,7 +159,8 @@ header .toolbar button:active {
     text-align: left;
     font-size: 25px;
 
-    background-color: rgb(165, 175, 250);
+    /* background-color: rgb(165, 175, 250); */
+    background-color: rgb(15, 150, 185);
 }
 .main-body .side-bar > label {
     display: inline-block;
@@ -225,7 +226,7 @@ header .toolbar button:active {
     border: 2px solid white;
     box-sizing: border-box;
 
-    background-color: rgb(15, 150, 185);
+    background-color: rgb(165, 175, 250);
 
 }
 .main-body .main-bar .slideshow-container {
@@ -292,7 +293,8 @@ footer {
     width: 100%;
     height: auto;
 
-    background-color: rgb(165, 175, 250);
+    /* background-color: rgb(165, 175, 250); */
+    background-color: rgb(15, 150, 185);
 }
 footer > address {
     left: 50%;

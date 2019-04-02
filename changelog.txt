@@ -1,0 +1,10 @@
+# Every tweaks will be documented here.
+
+# [Unreleased]
+
+# [1.0.0] - 2019/4/2
+##Added:
+- Fully implemented basic layouts and functionalities.
+##Changed:
+- Change the background colors.
+- Change the UI Language to Vietnamese.
