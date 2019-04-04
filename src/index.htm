@@ -115,13 +115,42 @@
                 <p>Tên sách không cần viết đầy đủ. Tên sách phải có dấu nếu là tiếng Việt.</p>
                 <br>
                 <label for="bookName"><b>Tên Sách</b></label>
-                <input type="text" placeholder="Tên" name="bookName" required>
+                <input type="text" placeholder="Tên" name="bookName">
                 <label for="phone"><b>Số Điện Thoại</b></label>
-                <input type="text" placeholder="Số điện thoại" name="phone" required>
+                <input type="tel" placeholder="Số điện thoại" name="phone">
                 <label for="email"><b>Email</b></label>
-                <input type="email" placeholder="Email" name="email" required>
+                <input type="email" placeholder="Email" name="email">
                 <br>
                 <p>Chúng tôi sẽ liên hệ với bạn ngay khi có hàng!</p>
+                <br>
+                <button type="submit" class="submitBtn">DONE</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="sellModal" class="modal">
+        <div class="modalContent">
+            <span class="close">&times;</span>
+            <form action="" id="sellForm" class="formContainer">
+                <h1>BÁN SÁCH</h1>                
+                <br>
+                <label for="bookName"><b>Tên Sách</b></label>
+                <input type="text" placeholder="Tên" name="bookName">
+                <div id="genresSelect">
+                    <label for="genres"><b>Thể Loại</b></label>
+                    <select>
+                        <option value="0">Tiểu Thuyết</option>
+                        <option value="1">Khoa Học</option>
+                        <option value="2">Kĩ Năng</option>
+                        <option value="3">Giáo Trình</option>
+                    </select>
+                </div>
+                <label for="phone"><b>Số Điện Thoại</b></label>
+                <input type="tel" placeholder="Số điện thoại" name="phone">
+                <label for="address"><b>Địa Chỉ</b></label>
+                <input type="text" placeholder="Email" name="address">
+                <br>
+                <p>Chúng tôi sẽ liên hệ với bạn sớm nhất có thể!</p>
                 <br>
                 <button type="submit" class="submitBtn">DONE</button>
             </form>
@@ -135,11 +164,11 @@
                     <h1>ĐĂNG NHẬP</h1>        
                     <br>
                     <label for="userName"><b>Tên</b></label>
-                    <input type="text" placeholder="Tên" name="userName" required>
+                    <input type="text" placeholder="Tên" name="userName">
                     <label for="phone"><b>Số Điện Thoại</b></label>
-                    <input type="text" placeholder="Số điện thoại" name="phone" required>
+                    <input type="text" placeholder="Số điện thoại" name="phone">
                     <label for="email"><b>Email</b></label>
-                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="email" placeholder="Email" name="email">
                     <br>
                     <br>
                     <button type="submit" class="submitBtn">ĐĂNG NHẬP</button>
@@ -151,6 +180,7 @@
 
     <script type="text/javascript" src="../src/slideShow.js"></script>
     <script type="text/javascript" src="../src/orderModal.js"></script>
+    <script type="text/javascript" src="../src/sellModal.js"></script>
     <script type="text/javascript" src="../src/loginModal.js"></script>
 </body>
 </html>

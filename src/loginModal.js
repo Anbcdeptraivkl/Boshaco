@@ -2,7 +2,7 @@ var loginModal = document.getElementById('loginModal');
 
 var loginButton = document.getElementById('loginButton');
 
-var loginClose = document.getElementsByClassName('close')[1];
+var loginClose = document.getElementsByClassName('close')[2];
 
 loginButton.onclick = function () {
     loginModal.style.display = 'block';

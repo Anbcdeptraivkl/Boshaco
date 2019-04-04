@@ -160,7 +160,7 @@ header .toolbar button:active {
     font-size: 25px;
 
     /* background-color: rgb(165, 175, 250); */
-    background-color: rgb(15, 150, 185);
+    background-color:white;
 }
 .main-body .side-bar > label {
     display: inline-block;
@@ -170,7 +170,7 @@ header .toolbar button:active {
     height: 40px;
     line-height: 60px;
     
-    color: white;
+    color: black;
     font-weight: bold;
     text-align: center;
 }
@@ -223,18 +223,20 @@ header .toolbar button:active {
     border:2px solid black;
     padding: 20px;
     margin: 10px auto;
+    margin-top: 20px;
 
     text-align: center;
 
     background-image: url('../img/sale.jpg');
     background-size: 100% 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
 
     transition: 0.5s all;
 }
 #sellPanel:hover {
     font-size: 110%;
 
+    background-color: rgba(0, 0, 0, 1);
     cursor: pointer;
 }
 #sellPanel > h2 {
@@ -256,7 +258,7 @@ header .toolbar button:active {
     border: 2px solid white;
     box-sizing: border-box;
 
-    background-color: rgb(165, 175, 250);
+    background-color: white;
 
 }
 .main-body .main-bar .slideshow-container {
@@ -391,6 +393,20 @@ footer > address {
 #loginModal > .modalContent {
     width: 30%;
 }
+#sellModal > .modalContent {
+    width: 60%;
+}
+#sellModal #genresSelect {
+    display: block;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#sellModal #genresSelect select {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .formContainer {
 
     display: block;
@@ -398,7 +414,7 @@ footer > address {
     margin-right: 20px;
     padding: 10px;
 }
-.formContainer input[type=text], input[type=email] {
+.formContainer input[type=text], input[type=email], input[type=tel] {
 
     width: 100%;
     padding: 10px;
@@ -407,7 +423,7 @@ footer > address {
 
     background-color: #f1f1f1;
 }
-.formContainer input[type=text]:focus, input[type=email]:focus {
+.formContainer input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus {
     background-color: #ddd;
 }
 .formContainer .submitBtn {
