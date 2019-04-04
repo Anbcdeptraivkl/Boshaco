@@ -1,8 +1,12 @@
 # Every tweaks will be documented here.
 
-
 # [Unreleased]
 
+# [1.2.0] - 2019/4/2
+## Added:
+- Functioning Sellpanel.
+##Changed:
+- Change background to white.
 
 # [1.1.0] - 2019/4/2
 ## Added:
@@ -11,7 +15,6 @@
 - More Hovering Effects.
 ## Changed:
 - The majority of Text are now white colored by default.
-
 
 # [1.0.0] - 2019/4/2
 ## Added:
