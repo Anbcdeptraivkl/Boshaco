@@ -30,14 +30,14 @@ header {
     height: auto;
 
 
-    text-align: center;
+    text-align: left;
 
     background-color: rgb(15, 150, 185);
 }
 header .logo {
     position: absolute;
     top: 10%;
-    left: 8%;
+    left: 3%;
 
     width: 120px;
     height: 120px;
@@ -48,8 +48,8 @@ header .logo {
 header > h1 {
     position: relative;
 
-    margin-left: 35px;
-    padding-top: 20px;
+    margin-left: 15%;
+    padding-top: 10px;
 
     font-weight: bolder;
     font-size: 70px;
@@ -59,7 +59,7 @@ header > h1 {
 header > h2 {
     position: relative;
 
-    margin-left: 35px;
+    margin-left: 15%;
     padding-bottom: 20px;
 
     font-style: italic;
@@ -317,11 +317,83 @@ header .toolbar button:active {
 }
 
 
+.main-body .main-bar > h2 {
+    position: relative;
+
+    display: block;
+    margin: 10px auto;
+    margin-top: 40px;
+    margin-bottom: -30px;
+    padding: 40px auto;
+    width: 90%;
+    height: auto;
+
+    line-height: 100px;
+    text-align: center;
+    font-family: BlackPersonal;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.main-body .main-bar .bookRow {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 20px 20px -20px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+.main-body .main-bar .bookRow .bookContainer {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+}
+.main-body .main-bar .bookRow .bookContainer .bookCover {
+    padding: 5px;
+    width: 200px;
+    height: 250px;;
+}
+.main-body .main-bar .bookRow .bookContainer .bookCover > img {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+.main-body .main-bar .bookRow .bookContainer .bookCover > img:hover {
+    padding: 12px;
+    cursor: pointer;
+}
+.main-body .main-bar .bookRow .bookContainer > p {
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+
+    font-size: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+.main-body .main-bar .bookRow .bookContainer > p:hover {
+    color: blue;
+    cursor: pointer;
+}
+
 footer {
     position: relative;
     bottom: 0;
 
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: auto;
 
@@ -329,7 +401,7 @@ footer {
     background-color: rgb(15, 150, 185);
 }
 footer .iconBar {
-    position: absolute;
+    position: relative;
     left: 0;
 
     margin: 10px;
@@ -337,31 +409,41 @@ footer .iconBar {
     padding: 10px;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 250px;
     height: 80px;
 
 }
 footer .iconBar .icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
 
     background-color: white;
 }
 footer .iconBar .icon:hover {
     cursor: pointer;
 }
-footer > address {
+footer .contactInfo {
     right: 0;
 
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 2px;
 
     color: white;
-    text-align: right;
+    text-align: left;
 }
+footer .contactInfo  h3{
+    padding: 5px;
 
+    font-size: 20px;
+    font-weight: bolder;
+}
+footer .contactInfo address {
+    padding: 5px;
+    padding-bottom: 20px;
+}
 
 .modal {
     position: fixed;
@@ -406,6 +488,12 @@ footer > address {
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 5px;
+    width: 150px;
+    height: 35px;
+
+    text-align: center;
+    font-size: 15px;
 }
 .formContainer {
 
@@ -475,8 +563,7 @@ footer > address {
     to {opacity: 1;}
 }
 
-/*NEXT
-- Logo
-- Order and Login Pop-forms
-- Footer Decorating Icons
-- Info */
+@font-face {
+    font-family: BlackPersonal;
+    src:url('../res/BLACK\ Personal\ Use.ttf');
+}
